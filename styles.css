@@ -1,0 +1,375 @@
+/* General Styles */
+
+/* images\5 more exercises for team building meetings _ &MEETINGS.jpeg
+images\Premium Photo _ Group of people on mountains top in winner pose_ teamwork concept.jpeg
+images\Premium Photo _ Winning team with gold trophy cup against shining sun in sky.jpeg
+*/
+body {
+    background-image: 
+        linear-gradient(45deg, rgba(226, 32, 32, 0.038), rgba(0, 0, 0, 0.3)),
+        url('images/Made\ with\ insMind-download\ \(8\).jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .bg {
+    background-color: rgba(0, 0, 0, 0.855);
+    border-bottom: 2px solid rgba(220, 17, 17, 0.363);
+}
+.cb {
+    padding-left: 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px #eb0707;
+}
+.cn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-shadow: 1.5px 1.5px #d41313;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 350px; /* Or your preferred height */
+  object-fit: cover;
+}
+
+/* tagline home */
+.home {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scrolling issues */
+}
+
+/* Fullscreen Video Background */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Dark Overlay for Readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+  z-index: 0
+}
+
+/* Content Styling */
+.home-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+}
+
+
+/* nav bar */
+
+.navbar-nav .nav-link {
+  color: white;
+  position: relative;
+  transition: transform 0.2s ease;
+    transform-origin: center; /* Needed for pseudo-element */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0); /* Initially hidden */
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1); /* Show underline on hover */
+  transform-origin: center left;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1); /* Scale up by 10% */
+}
+
+.navbar-nav .nav-item {
+  margin: 0 5px; /* Add horizontal margin to the list items */
+}
+
+.t{
+  padding: 20px 0;
+}
+
+/* event section */
+
+.s{
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+.s:hover{
+  color: #eb0707;
+  transition: transform 0.2s ease-out;
+}
+
+.g{
+  margin-top: 80px;
+}
+
+.g:hover{
+  color:#eb0707;
+  transition: transform 0.2s ease-out;
+}
+
+.event-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.event-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.event-card {
+  background: #000000;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  padding-bottom: 15px;
+}
+.event-card:hover {
+  transform: scale(1.05);
+}
+.event-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.event-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background: rgb(184, 2, 2);
+}
+.event-desc {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #ddd;
+  text-align: center;
+}
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(221, 8, 8, 0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+  z-index: 10;
+}
+.slide-btn:hover {
+  background: white;
+  color: red;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/*footer*/
+.footer {
+  background-color: black;
+  color: white;
+  margin-top: 60px;
+  padding: 30px 0; /* Adjust padding as needed */
+  transition: background-color 1s ease;
+}
+
+.footer-section {
+  margin-bottom: 20px; /* Spacing between columns */
+}
+
+.footer-heading {
+  color: red;
+  font-size: 1.2rem; /* Adjust size as needed */
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer a {
+  color: white; /* Or any color you prefer */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change color on hover (optional) */
+.footer a:hover {
+  color: red; /* Or a different hover color */
+}
+
+.footer-link {
+  display: block; /* Stack links vertically */
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: red;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-text:hover{
+  transform: translateX(5px);
+}
+
+.footer-icon {
+  color: red;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-divider {
+  border-color: white; /* Color of the hr line */
+  border-style:ridge;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-copyright {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+
+.footer-team {
+  color: red;
+  transition: color 0.3s ease; /* Team name transition */
+}
+
+.footer-team:hover {
+    color: white;
+}
+
+  .container, .swiper, .filter-btns {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* About us*/
+  .about-section {
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.about-image {
+    border-radius: 15px;
+    max-width: 100%;
+}
+.bt {
+    font-weight: bold;
+}
+.bt.btn-active {
+    background-color: #d30808;
+    color: rgb(10, 10, 10);
+}
+
+
+  /* Gallery */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #900;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    transition: transform 0.4s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Captions */
+  .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  /* Filter Buttons */
+  .filter-btns {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  button.btn-outline-light:hover {
+    background-color: rgb(176, 2, 2);
+    color: white;
+  }
+  
+  /* Swiper */
+  .swiper {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .swiper-slide {
+    background: #070505;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Modal */
+  .modal-img {
+    width: 100%;
+  }
+ 
+  
