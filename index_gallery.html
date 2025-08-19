@@ -5,21 +5,21 @@
   <title>QCMIT Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- Bootstrap CSS -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Swiper.js for slider -->
+ 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
-  <!-- AOS for scroll animation -->
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- External CSS -->
+ 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- 🔴 Header -->
+
 <nav class="navbar navbar-expand-lg bg shadow p-3 mb-5 fixed-top"> 
   <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -75,6 +75,7 @@
           <div class="mb-3">
               <button class="btn bt btn-active" id="missionBtn">Our Mission</button>
               <button class="btn bt" id="visionBtn">Our Vision</button>
+              <button class="btn bt" id="teamBtn">Team 2024-25</button>
           </div>
           <ul id="aboutText">
             <li>The Quiz Club of MIT is a club dedicated to building a passionate quizzing community within MIT, encouraging exploration beyond academics, and enhancing critical thinking, communication, and teamwork through quizzes.</li><br>
@@ -90,7 +91,7 @@
   <button class="slide-btn prev" onclick="slideLeft()"><i class="fas fa-chevron-left"></i></button>
   <div class="event-slider" id="eventSlider">
       
-      <!-- Event 1 -->
+   
       <div class="event-card">
           <img src="images/inauguration_25.jpg" class="event-img">
           <div class="event-title">Inauguration'25</div>
@@ -148,7 +149,7 @@
 </div>
 </div>
 
-<!--Swiper/Slider -->
+
 <div class="swiper mySwiper container t " data-aos="fade-up">
   <div class="swiper-wrapper">
     <div class="swiper-slide gallery-item events" onclick="openModal(this)" data-aos="zoom-in">
@@ -202,7 +203,7 @@
   </div>
 </div>
 
-<!-- Modal Preview -->
+
 <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content bg-dark">
@@ -213,7 +214,7 @@
   </div>
 </div>
 
-<!-- Footer -->
+
 <div class="footer container-fluid t" id="contact">
   <div class="row text-center">
       <div class="col-md-4 footer-section">
@@ -226,8 +227,8 @@
       </div>
       <div class="col-md-4 footer-section">
         <h4 class="footer-heading">Contact Us</h4>
-        <p class="footer-text"><i class="fas fa-phone footer-icon"></i> <a href="tel:+919361721146">+91 99406-92756</a></p>
-        <p class="footer-text"><i class="fas fa-phone footer-icon"></i> <a href="tel:+919361721146">+91 90437-90738</a></p>
+        <p class="footer-text"><i class="fas fa-phone footer-icon"></i> <a href="tel:+919361721146">+91 1234567890</a></p> 
+        <p class="footer-text"><i class="fas fa-phone footer-icon"></i> <a href="tel:+919361721146">+91 1234567890</a></p> 
         <p class="footer-text"><i class="fas fa-envelope footer-icon"></i> <a href="mailto:qcmit.blitzkrieg@gmail.com ">qcmit.blitzkrieg@gmail.com</a></p>
         <p class="footer-text"><i class="fas fa-map-marker-alt footer-icon"></i> Chrompet, Chennai-600044</p>
     </div>
@@ -241,7 +242,7 @@
   <p class="footer-copyright">Created By <span class="footer-team">@QCMITwebteam</span> | All Rights Reserved</p>
 </div>
 
-<!-- JS Section -->
+
 <script>
   document.getElementById("missionBtn").addEventListener("click", function() {
     document.getElementById("aboutText").innerHTML = 
@@ -251,6 +252,7 @@
         "</ul>";
     this.classList.add("btn-active");
     document.getElementById("visionBtn").classList.remove("btn-active");
+    document.getElementById("teamBtn").classList.remove("btn-active");
 });
 
 document.getElementById("visionBtn").addEventListener("click", function() {
@@ -261,8 +263,28 @@ document.getElementById("visionBtn").addEventListener("click", function() {
         "</ul>";
     this.classList.add("btn-active");
     document.getElementById("missionBtn").classList.remove("btn-active");
+    document.getElementById("teamBtn").classList.remove("btn-active");
 });
 
+document.getElementById("teamBtn").addEventListener("click", function() {
+    document.getElementById("aboutText").innerHTML = 
+        '<ul class="list-unstyled mb-0">' +
+        "<li><b>Chairperson:</b> Abinaya G (Final Year, Robotics and Automation)</li>" +
+        "<li><b>Vice Chairperson:</b> Albin Joseph Edwards G (Pre-Final Year, Artificial Intelligence and Data Science)</li>" +
+        "<li><b>Treasurer:</b> Sindhuja S (Final Year, Computer Science and Engineering)</li>" +
+        "<li><b>Joint Secretary:</b> Divya Prakash N S (Pre-Final Year, Aeronautical Engineering)</li>" +
+        "<li><b>Curation Head:</b> Subhi K (Final Year, Computer Science and Engineering)</li>" +
+        "<li><b>Curation Head:</b> Pradeesh Vel Nirmal V (Pre-Final Year, Aeronautical Engineering)</li>" +
+        "<li><b>Design Head:</b> Gopika B (Final Year, Automobile Engineering)</li>" +
+        "<li><b>Design Head:</b> Kiruthika A (Final Year, Computer Science and Engineering)</li>" +
+        "<li><b>Media & Marketing Head:</b> Saravanan T S (Final Year, Computer Science and Engineering)</li>" +
+        "<li><b>Media & Marketing Head:</b> Mohana M (Final Year, Computer Science and Engineering)</li>" +
+        "<li><b>Public Relations Head:</b> Ruparagunath G (Pre-Final Year, Artificial Intelligence and Data Science)</li>" +
+        "</ul>";
+    this.classList.add("btn-active");
+    document.getElementById("missionBtn").classList.remove("btn-active");
+    document.getElementById("visionBtn").classList.remove("btn-active");
+});
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
