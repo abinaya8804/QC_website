@@ -372,4 +372,19 @@ body {
     width: 100%;
   }
  
+.table {
+  background-color: transparent !important; 
+  color: white;  
+  border-color: white;  
+}
+
+.table th, .table td {
+  border: 1px solid white;  
+}
+
+.table thead th {
+  color: #fff;
+  font-weight: bold;
+  text-align: center; 
+}
   
