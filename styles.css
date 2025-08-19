@@ -390,3 +390,19 @@ body {
   text-align: center;
   border-bottom: 2px solid white; /* thicker underline for header */
 }
+
+.table, 
+.table tbody, 
+.table tr, 
+.table td, 
+.table th {
+  background-color: transparent !important;  /* remove white box */
+  color: white !important;                   /* white text */
+  border: none !important;                   /* remove unwanted borders */
+}
+
+.table thead th {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid white !important; /* only underline for header */
+}
