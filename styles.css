@@ -380,7 +380,7 @@ body {
 }
 
 .table th, .table td {
-  border: 1px solid white;  /* thin white lines */
+  border: 1px solid white;  
   padding: 8px 12px;
 }
 
@@ -388,7 +388,7 @@ body {
   color: #fff;
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px solid white; /* thicker underline for header */
+  border-bottom: 2px solid white; 
 }
 
 .table, 
@@ -396,13 +396,15 @@ body {
 .table tr, 
 .table td, 
 .table th {
-  background-color: transparent !important;  /* remove white box */
-  color: white !important;                   /* white text */
-  border: none !important;                   /* remove unwanted borders */
+  background-color: transparent !important;  
+  color: white !important;                  
+  border: none !important;
+  text-align: left !important;
 }
 
 .table thead th {
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px solid white !important; /* only underline for header */
+  border-bottom: 2px solid white !important; 
 }
+
