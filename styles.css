@@ -18,9 +18,9 @@ body {
     color: white;
     font-family: 'Segoe UI', sans-serif;
     overflow-x: hidden;
-  }
+}
 
-  .bg {
+.bg {
     background-color: rgba(0, 0, 0, 0.855);
     border-bottom: 2px solid rgba(220, 17, 17, 0.363);
 }
@@ -29,7 +29,7 @@ body {
     font-size: 30px;
     text-shadow: 2px 2px #eb0707;
 }
-.cn{
+.cn {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     text-shadow: 1.5px 1.5px #d41313;
@@ -98,7 +98,7 @@ body {
   color: white;
   position: relative;
   transition: transform 0.2s ease;
-    transform-origin: center; /* Needed for pseudo-element */
+  transform-origin: center; /* Needed for pseudo-element */
 }
 
 .navbar-nav .nav-link::after {
@@ -127,26 +127,26 @@ body {
   margin: 0 5px; /* Add horizontal margin to the list items */
 }
 
-.t{
+.t {
   padding: 20px 0;
 }
 
 /* event section */
 
-.s{
+.s {
   margin-bottom: 40px;
   margin-top: 70px;
 }
-.s:hover{
+.s:hover {
   color: #eb0707;
   transition: transform 0.2s ease-out;
 }
 
-.g{
+.g {
   margin-top: 80px;
 }
 
-.g:hover{
+.g:hover {
   color:#eb0707;
   transition: transform 0.2s ease-out;
 }
@@ -262,7 +262,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.footer-text:hover{
+.footer-text:hover {
   transform: translateX(5px);
 }
 
@@ -294,117 +294,103 @@ body {
     color: white;
 }
 
-  .container, .swiper, .filter-btns {
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* About us*/
-  .about-section {
-    padding: 10px 0;
-    margin-top: 10px;
+.container, .swiper, .filter-btns {
+  position: relative;
+  z-index: 1;
+}
+
+/* About us*/
+.about-section {
+  padding: 10px 0;
+  margin-top: 10px;
 }
 .about-image {
-    border-radius: 15px;
-    max-width: 100%;
+  border-radius: 15px;
+  max-width: 100%;
 }
 .bt {
-    font-weight: bold;
+  font-weight: bold;
 }
 .bt.btn-active {
-    background-color: #d30808;
-    color: rgb(10, 10, 10);
+  background-color: #d30808;
+  color: rgb(10, 10, 10);
 }
 
 
-  /* Gallery */
-  .gallery-item {
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #900;
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    transition: transform 0.4s ease;
-  }
-  
-  .gallery-item:hover img {
-    transform: scale(1.1);
-  }
-  
-  /* Captions */
-  .gallery-caption {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 5px;
-    text-align: center;
-  }
-  
-  /* Filter Buttons */
-  .filter-btns {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  
-  button.btn-outline-light:hover {
-    background-color: rgb(176, 2, 2);
-    color: white;
-  }
-  
-  /* Swiper */
-  .swiper {
-    width: 100%;
-    padding: 20px 0;
-  }
-  
-  .swiper-slide {
-    background: #070505;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  /* Modal */
-  .modal-img {
-    width: 100%;
-  }
- 
-.table {
-  background-color: transparent !important;  /* no background */
-  color: white;  /* white text */
-  border-collapse: collapse; /* clean borders */
+/* Gallery */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #900;
+}
+
+.gallery-item img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Captions */
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Filter Buttons */
+.filter-btns {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button.btn-outline-light:hover {
+  background-color: rgb(176, 2, 2);
+  color: white;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  background: #070505;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Modal */
+.modal-img {
   width: 100%;
 }
 
-.table th, .table td {
-  border: 1px solid white;  
-  padding: 8px 12px;
-}
-
-.table thead th {
-  color: #fff;
-  font-weight: bold;
+/* ===================== */
+/* ✅ TEAM SWIPER STYLES */
+/* ===================== */
+.myTeamSwiper {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  color: white;
   text-align: center;
-  border-bottom: 2px solid white; 
 }
 
-.table, 
-.table tbody, 
-.table tr, 
-.table td, 
-.table th {
-  background-color: transparent !important;  
-  color: white !important;                  
-  border: none !important;
-  text-align: left !important;
-}
-
-.table thead th {
+.myTeamSwiper h4 {
   font-weight: bold;
-  text-align: center;
-  border-bottom: 2px solid white !important; 
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #ff4c4c;
 }
 
+.myTeamSwiper p {
+  margin: 2px 0;
+  font-size: 1rem;
+}
